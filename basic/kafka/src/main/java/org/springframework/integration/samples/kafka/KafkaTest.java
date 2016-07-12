@@ -128,6 +128,7 @@ public class KafkaTest {
 			received = fromKafka.receive(1000);
 		}
 
+		kafkaMessageDrivenChannelAdapter.stop();
 		context.close();
 		System.exit(0);
 	}
